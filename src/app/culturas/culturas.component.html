@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <h1 class="text-center">Culturas Gastronómicas</h1>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let cultura of culturas">
+      <div class="card mb-4">
+        <img src="{{ cultura.imagen }}" class="card-img-top" alt="Imagen de {{ cultura.nombre }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ cultura.nombre }}</h5>
+          <p class="card-text">{{ cultura.descripcion }}</p>
+          <p class="card-text"><strong>Países:</strong> {{ cultura.paises.join(', ') }}</p>
+          <a routerLink="/productos" class="btn btn-primary btn-block">Ver productos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

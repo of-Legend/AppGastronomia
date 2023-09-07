@@ -1,0 +1,13 @@
+/* Estilo para las tarjetas de restaurantes */
+.restaurant-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .restaurant-card:hover {
+    transform: scale(1.05);
+  }
+  
